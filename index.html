@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Countries</title>
+     <style>
+    @import url("./css/responsive.css");
+ </style>
+    
+</head>
+
+<body>
+    
+    <video autoplay muted loop>
+        <source src="./img/Digital_World_Map_wcdPpCdPtoI_313.mkv" type="video/mp4">
+        
+    </video>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1 class="font text-light mt-5 text-center ">Discover the World Map</h1>
+                <div class="d-flex mt-4">
+                    <input type="text" style="background: rgba(239, 241, 240, 0.192);color: white;"  placeholder="Enter country name" class="form-control rounded-4"  id="country" onfocus="clearPlaceholder()" onblur="restorePlaceholder()" oninput="handleInputChange()">
+                    <input type="button" value="search" class="btn btn-success  ms-3 rounded-4" style="background: rgba(32, 142, 30, 0.374); color: white;" onclick="search()">
+                </div>
+                
+                    <div id="result_container" class=" d-flex mt-5 justify-content-center align-items-center">
+                       
+                    </div>
+            
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+     <!-- script -->
+     <script src="./js/script.js"></script>
+
+</body>
+
+</html>
